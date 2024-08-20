@@ -146,7 +146,8 @@ body {
 
 .sobre img {
     border-radius: 500px;
-    border: 3px solid var(--purple-800);
+    border: 2px solid var(--purple-800);
+    padding: 0.5px;
 }
 
 .sobre a {
@@ -170,6 +171,7 @@ body {
     padding: 15px 5px 15px 5px;
     justify-content: center;
     margin: auto;
+    display: inline-flex;
 }
 .sobre a:hover {
     background-color: var(--purple-800);
@@ -196,6 +198,9 @@ body {
     color: var(--black-800);
     padding-bottom: 50px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
 }
 
 
@@ -251,7 +256,7 @@ body {
     margin: auto;
 }
 
-.forms a{
+.forms button{
     padding: 12px 15px;
     border: none;
     border-radius: 10px;
@@ -260,7 +265,15 @@ body {
     box-sizing: content-box;
     width: 90%;
     margin: auto;
+    background-color: var(--purple-800);
+    color: var(--white);
 
+}
+
+.forms button:hover {
+    background-color: var(--purple-200);
+    border-radius: 10px;
+    
 }
 
 .forms label {
