@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
@@ -134,77 +135,72 @@ body {
     border-radius: 500px;
 }
 
-.sobre {
-    padding: 50px 50px 50px 50px;
+.sobre_container {
+    max-width: 1120px;
+    margin: -24px auto;
+    padding: 0 16px;
+    height: 100vh;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 500px);
-    text-align: center;
-    margin: auto;
 }
 
-.sobre img {
-    border-radius: 500px;
+.sobre_container img {
+    display: flex;
+    width: 35%;
     border: 2px solid var(--purple-800);
-    padding: 0.5px;
+    border-radius: 50%;
 }
 
-.sobre a {
+.sobre_container h1 {
+    font-size: 40px;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bold;
+    color: var(--purple-800);
+}
+
+.sobre_container p {
+    font-size: 20px;
+    text-align: center;
+    margin: 16px 0;
+    flex-direction: column;
+}
+
+#sobre_texto {
+    margin-left: 30px;
+}
+
+.sobre_container a {
     color: var(--purple-800);
     flex-direction: row;
     padding: 15px 10px 15px 10px;
     border: 0.2px solid var(--purple-200);
     border-radius: 10px;
-    text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin: 15px 15px 15px 15px;
-  
+    justify-content: space-evenly;
+    margin: 120px 15px 15px 110px;
+
 }
 
-.sobre span {
-    flex-direction: row;
+.sobre_container span {
     font-size: 20px;
     color: var(--black-800);
     font-weight: bolder;
-    padding: 15px 5px 15px 5px;
+    padding: 15px 15px 5px 15px;
     justify-content: center;
-    margin: auto;
     display: inline-flex;
+    align-items: center;
+    text-align: center;
 }
-.sobre a:hover {
+
+.sobre_container a:hover {
     background-color: var(--purple-800);
     color: var(--gray-200);
+    cursor: pointer;
 }
-
-.segundo_menu {
-    padding: 50px 50px;
-    justify-content: space-between;
-    align-items: center;
-    display: inline-block;
-}
-
-.segundo_menu h1 {
-    font-size: 50px;
-    color: var(--purple-800);
-    font-weight: bold;
-    padding-bottom: 30px;
-    text-align: center;
-}
-
-.segundo_menu p {
-    font-size: 20px;
-    color: var(--black-800);
-    padding-bottom: 50px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
-}
-
-
-
 .contato {
     min-width: auto;
     display: grid;
@@ -215,6 +211,7 @@ body {
     margin-top: 120px;
     gap: 30px;
 }
+
 .contato h4 {
     font-size: 50px;
     color: var(--purple-800);
@@ -245,7 +242,8 @@ body {
     padding: 20px;
 }
 
-.forms input, textarea {
+.forms input,
+textarea {
     padding: 12px 12px;
     border: none;
     border-radius: 10px;
@@ -256,7 +254,7 @@ body {
     margin: auto;
 }
 
-.forms button{
+.forms button {
     padding: 12px 15px;
     border: none;
     border-radius: 10px;
@@ -273,7 +271,8 @@ body {
 .forms button:hover {
     background-color: var(--purple-200);
     border-radius: 10px;
-    
+    cursor: pointer;
+
 }
 
 .forms label {

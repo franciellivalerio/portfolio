@@ -11,27 +11,32 @@ async function getApiGithub(){
         const perfil = await dadosPerfil.json();
         
         let conteudo = `
-            <img src="${perfil.avatar_url}" alt="Foto do Perfil - ${perfil.name}>
+            
+            <img src="${perfil.avatar_url}" alt="Foto do Perfil - ${perfil.name}>" />
 
+            <article id="sobre_texto">
+                
+                
 
-            <article id="sobre_texto" class="segundo_menu">
-
-                <h1 class="sobre_mim">Sobre mim</h1>
+                <h1> Sobre mim </h1>
 
                 <p>
+                    
                     Me chamo Francielli Valerio e sou desenvolvedora full stack JavaScript/TypeScript. Atualmente estou
                     cursando Análise e Desenvolvimento de Sistemas, moro na baixada fluminense do Rio de Janeiro e entrei no mundo da tecnologia a partir de uma transição de carreira.
-                    <p>
+                 </p> 
+                    
+                <p>   
                     Desde o começo, senti a necessidade de fazer esse campo tão imenso ser um lugar onde as pessoas menos experientes pudessem experiementar acolhimento.
                     Tenho um perfil de estudos profissional na rede social X (antigo Twitter) onde eu compartilho da minha rotina e dicas de estudo tanto para back-end quanto
                     para front-end. Hoje, já somo mais de 2 MILHÕES de visualizações e milhares de seguidores que me apoiam e seguem meus conteúdos.
                 </p>
+               
 
-
-                <div id="sobre_github" class="botao_github">
+                <div id="sobre_github">
 
                     <a target="_blank" href="${perfil.html_url}"> GitHub </a>
-                    <span> ${perfil.followers} </span> <span> ${perfil.public_repos} </span>
+                    <span> ${perfil.followers} Seguidores </span> <span> ${perfil.public_repos} Repositórios Públicos </span>
 
 
                 </div>
