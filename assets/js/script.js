@@ -27,7 +27,7 @@ async function getApiGithub(){
                  </p> 
                     
                 <p>   
-                    Desde o começo, senti a necessidade de fazer esse campo tão imenso ser um lugar onde as pessoas menos experientes pudessem experiementar acolhimento.
+                    Desde o começo, senti a necessidade de fazer esse campo tão imenso ser um lugar onde as pessoas menos experientes pudessem obter acolhimento.
                     Tenho um perfil de estudos profissional na rede social X (antigo Twitter) onde eu compartilho da minha rotina e dicas de estudo tanto para back-end quanto
                     para front-end. Hoje, já somo mais de 2 MILHÕES de visualizações e milhares de seguidores que me apoiam e seguem meus conteúdos.
                 </p>
